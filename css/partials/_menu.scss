@@ -13,7 +13,6 @@ header{
     display: flex;
     justify-content: space-between; /*faz com que os itens flex fiquem equidistantes*/
     align-items: center;
-    border: 1px solid red;
 }
 
 .nav-menu{
@@ -26,7 +25,6 @@ header{
 .nav-list{
     list-style: none;   
     display: flex;
-    border: 1px solid rgb(67, 199, 170);
 
     li{
         margin-left: 24px;
@@ -34,7 +32,6 @@ header{
 }
 
 .logo{
-    border: 1px solid rgb(9, 255, 0);
     max-width: 88px;
 
 }
