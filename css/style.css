@@ -35,11 +35,12 @@ header {
 
 .navbar {
   max-width: 1440px;
-  border: 1px solid red;
   margin: 0 auto; /*zero pixels em cima e embaixo, e automatico dos lados*/
+  padding: 0px 16px;
   display: flex;
   justify-content: space-between; /*faz com que os itens flex fiquem equidistantes*/
   align-items: center;
+  border: 1px solid red;
 }
 
 .nav-menu {
@@ -51,9 +52,15 @@ header {
 .nav-list {
   list-style: none;
   display: flex;
+  border: 1px solid rgb(67, 199, 170);
 }
 .nav-list li {
   margin-left: 24px;
+}
+
+.logo {
+  border: 1px solid rgb(9, 255, 0);
+  max-width: 88px;
 }
 
 .nav-link {
@@ -88,4 +95,16 @@ header {
 
 .nav-social {
   display: flex;
+}
+.nav-social svg {
+  cursor: pointer;
+  margin-left: 16px;
+  width: 24px;
+}
+.nav-social svg path, .nav-social svg circle {
+  transition: 0.7s ease;
+}
+.nav-social svg:hover path, .nav-social svg:hover circle {
+  fill: #F02A2F;
+  transform: translate3d(0, -3px, 0);
 }/*# sourceMappingURL=style.css.map */
