@@ -17,11 +17,7 @@
 
     @include responsive(){
         flex-direction: column;
-        height: auto;
     }
-
-
-    border: 1px solid red;
 
 }
 
@@ -156,4 +152,3 @@
         }
     }
 }
-
