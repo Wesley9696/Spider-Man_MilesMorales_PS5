@@ -37,7 +37,7 @@ p {
   max-width: 1440px;
   margin: 0 auto;
   padding: 36px 16px;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   /*deixa um item do lado do outro que naverdade é padrão*/
@@ -164,7 +164,6 @@ header {
   max-width: 1440px;
   margin: 0 auto;
   /*zero pixels em cima e embaixo, e automatico dos lados*/
-  border: 1px solid red;
   padding: 0px 16px;
   display: flex;
   justify-content: space-between;
@@ -204,7 +203,6 @@ header {
   font-weight: 200;
   color: #959698;
   padding: 8px 16px;
-  transition: 0.7s ease;
   position: relative;
 }
 .nav-link::after {
@@ -226,15 +224,6 @@ header {
   height: 40px;
 }
 
-.bx {
-  top: 46%;
-  width: 44px;
-  height: 3px;
-  background: #F4F7FB;
-  border-radius: 8px;
-  position: relative;
-}
-
 .bx:before {
   bottom: 12px;
   border-radius: 8px;
@@ -245,12 +234,6 @@ header {
   border-radius: 8px;
 }
 
-.burguer {
-  width: 48px;
-  height: 48px;
-  cursor: pointer;
-}
-
 .bx-1:before,
 .bx-1:after {
   content: "";
@@ -258,6 +241,27 @@ header {
   width: 44px;
   height: 3px;
   background: #F4F7FB;
+}
+
+.bx {
+  top: 46%;
+  width: 44px;
+  height: 3px;
+  background: #F4F7FB;
+  border-radius: 8px;
+  position: relative;
+}
+
+.burguer {
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  .burguer {
+    display: block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+  }
 }
 
 .nav-social {

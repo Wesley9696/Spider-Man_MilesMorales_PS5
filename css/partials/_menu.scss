@@ -9,7 +9,6 @@ header {
     margin: 0 auto;
     /*zero pixels em cima e embaixo, e automatico dos lados*/
 
-    border: 1px solid red;
     padding: 0px 16px;
 
     display: flex;
@@ -54,9 +53,8 @@ header {
     font-weight: 200;
 
     color: $gray-3;
-
     padding: 8px 16px;
-    transition: .7s ease;
+  
 
     position: relative;
 
@@ -83,6 +81,28 @@ header {
     }
 }
 
+
+
+.bx:before {
+    bottom: 12px;
+    border-radius: 8px;
+}
+
+.bx:after {
+    top: 12px;
+    border-radius: 8px;
+}
+
+.bx-1:before,
+.bx-1:after {
+    content: '';
+    position: absolute;
+    width: 44px;
+    height: 3px;
+    
+    background: $white-light;
+}
+
 .bx {
     top: 46%;
     width: 44px;
@@ -90,40 +110,18 @@ header {
     background: $white-light;
     border-radius: 8px;
     position: relative;
-    
-    }
-
-.bx:before{
-        bottom: 12px;
-        border-radius: 8px;
-    }
-
-.bx:after{
-        top: 12px;
-        border-radius: 8px;
-    }
-
+}
 
 .burguer {
-    width: 48px;
-    height: 48px;
-    cursor: pointer;
+    display: none;
+
+    @include responsive() {
+        display: block;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+    }
 }
-
-.bx-1:before,
-.bx-1:after{
-    content: '';
-    position:absolute;
-    width: 44px;
-    height: 3px;
-    background:$white-light;
-}
-
-
-
-
-
-
 
 .nav-social {
 
