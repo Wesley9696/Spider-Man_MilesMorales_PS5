@@ -46,8 +46,8 @@
 }
 
 .spiderman {
-    width: 150%;
-    transform: translate3d(-190px, 0, 0);
+    width: 130%;
+    transform: translate3d(-170px, 0, 0);
 
     @include responsive(){
         width: 100%;
@@ -130,7 +130,7 @@
 
     position: relative;
 
-    border: 2px solid red;
+    border: 2px solid #F02A2F;
 
     &::after{
         
@@ -146,7 +146,7 @@
         width: 0%;
         height: 103%;
 
-        background: linear-gradient(225deg, #F02A2F 0%, #EA1D22 100%);
+        background: linear-gradient(225deg, #F02A2F 0%, #ea1d22 100%);
 
     }
 
@@ -185,4 +185,23 @@
 
         background: linear-gradient(90deg, #0B0C10 23.96%, rgba(11, 12, 16, 0.80) 52.60%, #0C0C10 77.60%);
     }
+}
+
+
+.bg-loader{
+width: 100%;
+height: 100vh;
+position: absolute;
+top: 0;
+left: 0;
+
+z-index: 999;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+overflow: hidden;
+
+background: linear-gradient(225deg, $red 0%, $red-dark 100%);
 }
